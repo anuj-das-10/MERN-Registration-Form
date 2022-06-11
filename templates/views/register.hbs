@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    {{>header}}
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <form action="/register" method="post">
+    <h3>REGISTER HERE!</h3>
+        <h4>Full name</h4>
+        <input type="text" name="fullName" id="fullName" placeholder="Full name *">
+        <h4>Email</h4>
+        <input type="text" name="email" id="email" placeholder="Email *">
+        <h4>Mobile number</h4>
+        <input type="text" name="mobile_no" id="mobile_no" placeholder="Mobile Number *">
+        <h4>Address</h4>
+        <input type="text" name="address" id="address" placeholder="Address *">
+        <h4>Password</h4>
+        <input type="text" name="password" id="password" placeholder="Password *">
+        <h4>Confirm password</h4>
+        <input type="text" name="confirm__password" id="confirm__password" placeholder="Confirm password *">
+        <input type="submit" value="REGISTER" class="btn">
+    </form>
+</div>
+</body>
+</html>

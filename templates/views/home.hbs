@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | CAFE</title>
+    {{>header}}
+     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background: url(bg1.jpg) no-repeat center center fixed; 
+        }
+        .container{
+            margin-top: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        }
+        .container form{
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+   <h4>WELCOME TO OUR CAFE</h4>
+    <h3>LOGIN SUCCESSFULL!</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est dolore obcaecati voluptatem consequuntur alias quod aut voluptates, asperiores eius porro, pariatur qui, incidunt adipisci at voluptatum officiis laudantium ipsam a molestiae ad dignissimos aperiam distinctio minima! Voluptatibus quasi omnis tenetur magni, dolore temporibus debitis voluptates eligendi reiciendis excepturi nulla! Nisi itaque quo possimus quia, ipsa et in assumenda quis voluptate architecto molestiae deserunt alias esse! Veritatis officiis perferendis eaque nisi sequi dolorum provident eius, veniam libero illo ut eligendi soluta debitis, voluptatem, qui repellat ratione. Quo dolor asperiores quis ad?</p>
+</div>
+
+<script>
+    /*Prevent resubmission of form on refresh the page after successfully logged in*/
+     window.onload = function() {
+        history.replaceState("", "", "home");
+    }
+</script>
+</body>
+</html>

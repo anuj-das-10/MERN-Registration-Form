@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME</title>
+    {{>header}}
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        }
+        .container form{
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h3>WELCOME TO OUR CAFE</h3>
+    <h2>REGISTRATION SUCCESSFULLY COMPLETED</h2>
+    <br><br>
+    <form action="/login" method="post">
+    <h3>NOW LOG IN HERE!</h3>
+        <h4>Email</h4>
+        <input type="email" name="email" id="email" placeholder="Enter registered Email *">
+        <h4>Password</h4>
+        <input type="password" name="password" id="password" placeholder="Enter your password *">
+        <input type="submit" value="LOGIN" class="btn">
+    </form>
+    </div>
+
+
+<script>
+    /*Prevent resubmission of form on refresh the page after successfully registered*/
+     window.onload = function() {
+        history.replaceState("", "", "welcome");
+    }
+</script>
+</body>
+</html>
