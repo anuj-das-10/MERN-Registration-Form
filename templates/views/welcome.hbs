@@ -30,12 +30,18 @@
         <h4>Email</h4>
         <input type="email" name="email" id="email" placeholder="Enter registered Email *">
         <h4>Password</h4>
+        <span class="password-toggle">
         <input type="password" name="password" id="password" placeholder="Enter your password *">
+        <i class="bi bi-eye-slash" id="togglePassword"></i>
+        </span>
         <input type="submit" value="LOGIN" class="btn">
     </form>
     </div>
 
 
+
+<script src="../../public/js/script.js"></script>
+<script src="js/script.js"></script>
 <script>
     /*Prevent resubmission of form on refresh the page after successfully registered*/
      window.onload = function() {

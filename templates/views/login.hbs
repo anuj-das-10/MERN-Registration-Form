@@ -15,17 +15,16 @@
         <h4>Email</h4>
         <input type="email" name="email" id="email" placeholder="Enter registered Email *">
         <h4>Password</h4>
-        <input type="password" name="password" id="password" placeholder="Enter your password *">
+         <span class="password-toggle">
+            <input type="password" name="password" id="password" placeholder="Enter your password *">
+            <i class="bi bi-eye-slash" id="togglePassword"></i>
+        </span>
         <input type="submit" value="LOGIN" class="btn">
     </form>
 </div>
 
 
-{{!-- Prevent Going back to Login Screen after Logged in successfully --}}
-{{!-- <script type="text/javascript">
-        function disableBack() { window.history.forward(); }
-        setTimeout("disableBack()", 0);
-        window.onunload = function () { null };
-</script> --}}
+<script src="../../public/js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

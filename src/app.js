@@ -63,7 +63,7 @@ app.post("/register", async (req,res) => {
             }
         }
     catch(error) {
-        res.status(400).send("Email already taken!");
+        res.status(400).send("Internal Error or Email/Phone number already taken!");
     }
 })
 

@@ -20,12 +20,24 @@
         <input type="text" name="mobile_no" id="mobile_no" placeholder="Mobile Number *">
         <h4>Address</h4>
         <input type="text" name="address" id="address" placeholder="Address *">
+        
         <h4>Password</h4>
-        <input type="text" name="password" id="password" placeholder="Password *">
+        <span class="password-toggle">
+        <input type="password" name="password" id="password" placeholder="Password *">
+        <i class="bi bi-eye-slash" id="togglePassword"></i>
+        </span>
+
         <h4>Confirm password</h4>
-        <input type="text" name="confirm__password" id="confirm__password" placeholder="Confirm password *">
+        <span class="password-toggle">
+        <input type="password" name="confirm__password" id="confirm__password" placeholder="Confirm password *">
+        <i class="bi bi-eye-slash" id="togglePassword-confirm"></i>
+        </span>
+
         <input type="submit" value="REGISTER" class="btn">
     </form>
 </div>
+
+<script src="../../public/js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
